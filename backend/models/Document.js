@@ -6,7 +6,7 @@ const DocumentSchema = new mongoose.Schema({
   category: {
     type: String,
     enum: ["Personal", "Education", "Professional"],
-    required: true,
+    required: true, 
   },
   uploadedAt: { type: Date, default: Date.now },
   employeeId: { type: String, required: true },
