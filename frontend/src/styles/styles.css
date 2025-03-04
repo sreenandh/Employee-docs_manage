@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rebeccapurple;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .login-container, .upload-form, .document-list {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  input[type="text"], input[type="password"], input[type="file"], select {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .message {
+    color: green;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .dashboard h1{
+    color: rebeccapurple;
+  }
+
+  .document-list h3{
+    color: rebeccapurple;
+  }
