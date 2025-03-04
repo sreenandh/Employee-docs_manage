@@ -12,7 +12,7 @@ exports.uploadDocument = upload.single('file');
 
 exports.uploadDocumentHandler = async (req, res) => {
   try {
-    // Extract category from request body
+    
     const { category } = req.body;
     // Instead of taking employeeId from the request body,
     // use the authenticated user's id provided by the auth middleware.
@@ -23,7 +23,7 @@ exports.uploadDocumentHandler = async (req, res) => {
     // Create a unique filename
     const fileKey = `${uuidv4()}_${req.file.originalname}`;
 
-    // Upload file to S3 without ACL (since bucket doesn't allow ACLs)
+    
     const params = {
       Bucket: process.env.S3_BUCKET_NAME,
       Key: fileKey,
