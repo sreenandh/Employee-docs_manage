@@ -29,8 +29,8 @@ Employee Document Management System is a full-stack web application designed to 
 
 **Frontend:**  
 - React, Vite  
-- React Router, SCSS  
-- Fetch API, axios
+- React Router, CSS  
+- Fetch API
 
 ## Overview
 
