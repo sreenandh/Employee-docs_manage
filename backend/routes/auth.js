@@ -6,6 +6,7 @@ const { login, register } = require('../controllers/authController');
 router.post('/register', register);
 
 // POST /api/auth/login - Login user and generate token
+
 router.post('/login', login);
 
 module.exports = router;

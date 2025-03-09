@@ -10,12 +10,12 @@ const Login = ({ onLogin }) => {
     try {
       const res = await fetch('http://localhost:5000/api/auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ username, password })
       });
       const data = await res.json();
       if (res.ok) {
-        onLogin(data.token);
+        onLogin(data.token); //pass the received token to the parent component
       } else {
         setError(data.message || 'Login failed');
       }

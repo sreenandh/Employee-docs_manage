@@ -19,7 +19,7 @@ const DocumentList = ({ documents, token }) => {
               <td>{doc.filename}</td>
               <td>{doc.category}</td>
               <td>{new Date(doc.uploadedAt).toLocaleString()}</td>
-              <td>
+             <td>
                 <a 
                   href={`http://localhost:5000/api/documents/download/${doc._id}?x-api-key=rfcruujguahtucnlwzwgkylpfhdhrmdd`} 
                   target="_blank" 
@@ -37,3 +37,4 @@ const DocumentList = ({ documents, token }) => {
 };
 
 export default DocumentList;
+ 

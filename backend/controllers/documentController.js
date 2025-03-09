@@ -14,8 +14,7 @@ exports.uploadDocumentHandler = async (req, res) => {
   try {
     
     const { category } = req.body;
-    // Instead of taking employeeId from the request body,
-    // use the authenticated user's id provided by the auth middleware.
+   
     const employeeId = req.user.id;
 
     if (!req.file) return res.status(400).json({ message: 'No file uploaded' });

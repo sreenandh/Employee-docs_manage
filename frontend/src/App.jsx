@@ -3,7 +3,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem('token') || '');
+  const [token, setToken] = useState(localStorage.getItem('token') || ''); //empty string if no token
 
   const handleLogin = (token) => {
     localStorage.setItem('token', token);

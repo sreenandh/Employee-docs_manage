@@ -23,7 +23,7 @@ const Dashboard = ({ token, onLogout }) => {
     }
   };
 
-  // Fetch documents on mount
+  // Fetch documents
   useEffect(() => {
     fetchDocuments();
   }, []);
